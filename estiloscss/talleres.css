@@ -1,0 +1,174 @@
+*{  /*universal*/
+    margin: 0;    padding: 0;    font-family: 'Roboto', sans-serif;    }
+h1{
+    text-align: center;
+}
+    .container_workshops{
+    padding: 0;
+    width: 100%;
+    max-width: 1800;
+    height: auto;
+    font-family: sans-serif;
+    line-height: 1.6;
+    justify-content:center;
+    margin:auto;
+    flex-wrap: wrap;
+    display:flex;
+        background-color: aliceblue;
+}
+.container_workshops .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: white;
+}
+
+.container_workshops .title_workshops p{
+margin-left:50px ;
+margin-right: 50px;
+text-align: center;
+}
+.container_workshops .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container_workshops .card img{
+    width: 330px;
+    height: 220px;    
+}
+.container_workshops .card p{
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.card a{
+    text-decoration: none;
+    
+}
+header{
+    background-color: aliceblue;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoheader{
+    width: 190px;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+}
+.menu{
+    display: inline-block;
+}
+#listamenu li{
+    display:inline;
+    padding: 30px;
+}
+.aheader{ /*LINKS DEL HEADER EFECTOS*/
+    display: inline-block;
+    box-shadow: inset 0 0 0 0 #7d2c2c;
+    color: #b10909;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-decoration: none;
+}
+.aheader:hover {
+    box-shadow: inset 100px 0 0 0 #b10909;
+    color: white;
+}
+nav a{ /*links en negrita*/
+    font-weight: 600;
+}
+
+/*FOOTER*/
+footer{ 
+    background-color:rgb(73, 85, 119);
+}
+footer .pie-pagina{  
+    width: 100%;
+    background-color:rgb(73, 85, 119);
+    line-height: 28px;
+    display: grid;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 35px;
+    color: black; 
+}
+
+.pie-pagina .grupo-1 h3{ /*Titulos*/
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 img{
+    width: 20px;
+    height: 20px;
+}
+
+.pie-pagina .grupo-1 ul{ /* texto inf de contacto*/
+    color: black;
+    margin-bottom: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.pie-pagina .grupo-1 ul a:hover{
+    color: lightpink;
+}
+
+.pie-pagina .grupo-1 ul a{
+    color: black;
+}
+
+.pie-pagina .grupo-1 .red-social a{  /*NUESTRAS REDES*/
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: black;
+    margin-right: 10px;
+    text-align: center;
+}
+.pie-pagina .grupo-1 .links a:hover{
+    color: lightpink;
+}    
+.pie-pagina .grupo-1 .red-social img:hover{
+    color: lightpink;
+}
+
+.pie-pagina .grupo-1 .links li a{ /*links de la columna LINKS*/
+    padding: none;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
+
+.pie-pagina .grupo-2{ /*copyright*/
+    background-color: rgb(34, 4, 48);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.column2{ /*columna links a la izq*/
+    text-align: right;
+    margin-right: 100px;
+}
+.pie-pagina .grupo-2 small{ /*copyright - FIN EDICION PIE*/
+    font-size: 15px;
+}

@@ -1,0 +1,205 @@
+*{  /*universal*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    }
+body{
+        margin: 0;
+    font-family: sans-serif;
+}
+.contenedor header{
+    background-color: aliceblue;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoheader{
+    width: 190px;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+}
+.menu{
+    display: inline-block;
+}
+#listamenu li{
+    display:inline;
+    padding: 30px;
+}
+.aheader{ /*LINKS DEL HEADER EFECTOS*/
+    display: inline-block;
+    box-shadow: inset 0 0 0 0 #7d2c2c;
+    color: #b10909;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-decoration: none;
+}
+.aheader:hover {
+    box-shadow: inset 100px 0 0 0 #b10909;
+    color: white;
+}
+nav a{ /*links en negrita*/
+    font-weight: 600;
+}
+
+.contenedor footer{ /*INICIO EDICION PIE*/
+    grid-row: 4/5;
+    grid-column: 1/5;
+}
+.pie-pagina{  
+    width: 100%;
+    background-color:rgb(73, 85, 119);
+    line-height: 28px;
+    display: grid;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 35px;
+    color: black; 
+}
+
+.pie-pagina .grupo-1 h3{ /*Titulos*/
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 img{
+    width: 20px;
+    height: 20px;
+}
+
+.pie-pagina .grupo-1 ul{ /* texto inf de contacto*/
+    color: black;
+    margin-bottom: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.pie-pagina .grupo-1 ul a:hover{
+    color: lightpink;
+}
+
+.pie-pagina .grupo-1 ul a{
+    color: black;
+}
+
+.pie-pagina .grupo-1 .red-social a{  /*NUESTRAS REDES*/
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: black;
+    margin-right: 10px;
+    text-align: center;
+}
+.pie-pagina .grupo-1 .links a:hover{
+    color: lightpink;
+}    
+.pie-pagina .grupo-1 .red-social img:hover{
+    color: lightpink;
+}
+
+.pie-pagina .grupo-1 .links li a{ /*links de la columna LINKS*/
+    padding: none;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
+
+.pie-pagina .grupo-2{ /*copyright*/
+    background-color: rgb(34, 4, 48);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.column2{ /*columna links a la izq*/
+    text-align: right;
+    margin-right: 100px;
+}
+.pie-pagina .grupo-2 small{ /*copyright - FIN EDICION PIE*/
+    font-size: 15px;
+}
+.nosotrosgrid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.gridtexto { 
+    grid-area: 1 / 1 / 2 / 2; 
+    margin-left: 2%;
+    margin-right: 4% ;
+}
+.gridtexto h3{
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.gridtexto li{
+    background: url("/img/nosotrosimg/flechalista.png") 0 2px no-repeat;
+    list-style: none;
+    padding: 0 0 5px 25px;
+}
+.gridtexto ul{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.gridtexto p{
+    margin-top: 10px;
+}
+.gridimgss { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.gridtexto img{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+.gridimgss img{
+    width: 100%;
+}
+@media screen and (max-width: 920px){
+    .contenedor footer{
+        grid-row: 5/6;
+        grid-column: 1/5;
+    }
+    .column2{ /*columna links a la izq*/
+        text-align: left;
+        margin-left: 40px;
+    }
+    .pie-pagina .grupo-1 ul{ /* texto inf de contacto*/
+        color: black;
+        margin-bottom: -10px;
+    }
+    .pie-pagina .grupo-1 h3{ /*Titulos*/
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .contenedor footer{
+        grid-row: 5/6;
+        grid-column: 1/5;
+    }
+    .column2{ /*columna links a la izq*/
+        text-align: left;
+    }
+    .pie-pagina .grupo-1 h3{ /*Titulos*/
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .pie-pagina .grupo-1 ul{ /* texto inf de contacto*/
+        margin-bottom: -10px;
+}
+}

@@ -1,0 +1,262 @@
+*{  /*universal*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    }
+
+    .interior{
+        background-color: aliceblue;
+    }
+    .cursosdata h2{
+        text-align: center;
+    }
+    .cursosdata p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .cursosdata{
+        background-color: white;
+        padding: 10px;
+        border-radius: 20px;
+        width: 900px;
+        height: auto;
+        margin: 0px auto;
+        filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.2));
+    }
+.containercards{
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
+.card:hover{
+    width: 350px;
+}
+.card .cover{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.card .cover img{
+    width: 250px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: auto;
+    top: 50px;
+    transition: all 400ms;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+}
+.card:hover .cover img{
+    top: 40px;
+    filter: none;
+}
+.card .imgback{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-size: cover;
+    bottom: -80px;
+    left: 0;
+    border-radius: 20px 20px 0px 0px;
+    transition: all 300ms;
+
+}
+.card:nth-of-type(1) .imgback{    background-image: url(../img/cursosimg/fondo.jpg);}
+.card:nth-of-type(2) .imgback{    background-image: url(../img/cursosimg/fondo2.jpg);}
+.card:nth-of-type(3) .imgback{    background-image: url(../img/cursosimg/fondo3.jpg);}
+.card:nth-of-type(4) .imgback{    background-image: url(../img/cursosimg/fondo4.jpg);}
+.card:hover .imgback{    bottom:-40px;}
+
+.card .descripcion{
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+.card:hover .descripcion{    padding:40px;}
+.card .descripcion h2{    margin-top: 10px;}
+.card .descripcion p{    margin-top: 10px;}
+
+.card .descripcion input{ /*BOTON LEER MAS*/
+    padding:  10px 20px;
+    margin-top: 20px;
+    border: none;
+    background: rgb(97, 97, 97);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 500ms;
+}
+.card .descripcion input:hover{ background: rgb(0, 0, 0);}
+header{
+        background-color: aliceblue;
+        grid-column: 1/2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logoheader{
+        width: 190px;
+        display: flex;
+        align-items: center;
+        margin: 2px;
+    }
+    .menu{
+        display: inline-block;
+    }
+    #listamenu li{
+        display:inline;
+        padding: 30px;
+    }
+    .aheader{ /*LINKS DEL HEADER EFECTOS*/
+        display: inline-block;
+        box-shadow: inset 0 0 0 0 #7d2c2c;
+        color: #b10909;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        text-decoration: none;
+    }
+    .aheader:hover {
+        box-shadow: inset 100px 0 0 0 #b10909;
+        color: white;
+    }
+    nav a{ /*links en negrita*/
+        font-weight: 600;
+    }
+    
+    /*FOOTER*/
+    footer{ 
+        background-color:rgb(73, 85, 119);
+    }
+    footer .pie-pagina{  
+        width: 100%;
+        background-color:rgb(73, 85, 119);
+        line-height: 28px;
+        display: grid;
+    }
+    
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 35px;
+        color: black; 
+    }
+    
+    .pie-pagina .grupo-1 h3{ /*Titulos*/
+        color: white;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .pie-pagina .grupo-1 img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .pie-pagina .grupo-1 ul{ /* texto inf de contacto*/
+        color: black;
+        margin-bottom: 10px;
+        list-style-type: none;
+        text-decoration: none;
+        padding: 0;
+    }
+    
+    .pie-pagina .grupo-1 ul a:hover{
+        color: lightpink;
+    }
+    
+    .pie-pagina .grupo-1 ul a{
+        color: black;
+    }
+    
+    .pie-pagina .grupo-1 .red-social a{  /*NUESTRAS REDES*/
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: black;
+        margin-right: 10px;
+        text-align: center;
+    }
+    .pie-pagina .grupo-1 .links a:hover{
+        color: lightpink;
+    }    
+    .pie-pagina .grupo-1 .red-social img:hover{
+        color: lightpink;
+    }
+    
+    .pie-pagina .grupo-1 .links li a{ /*links de la columna LINKS*/
+        padding: none;
+        text-decoration: none;
+        color: black;
+        text-align: left;
+    }
+    
+    .pie-pagina .grupo-2{ /*copyright*/
+        background-color: rgb(34, 4, 48);
+        padding: 15px 10px;
+        text-align: center;
+        color: white;
+    }
+    .column2{ /*columna links a la izq*/
+        text-align: right;
+        margin-right: 100px;
+    }
+    .pie-pagina .grupo-2 small{ /*copyright - FIN EDICION PIE*/
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: 920px){
+        .cursosdata{
+            width: 600px;
+        }
+        .contenedor footer{
+            grid-row: 5/6;
+            grid-column: 1/5;
+        }
+        .column2{ /*columna links a la izq*/
+            text-align: left;
+        }
+        .pie-pagina .grupo-1 ul{ /* texto inf de contacto*/
+            color: black;
+            margin-bottom: -10px;
+        }
+        .pie-pagina .grupo-1 h3{ /*Titulos*/
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        .cursosdata{
+            width: 400px;
+        }
+        .contenedor footer{
+            grid-row: 5/6;
+            grid-column: 1/5;
+        }
+        .column2{ /*columna links a la izq*/
+            text-align: left;
+        }
+        .pie-pagina .grupo-1 h3{ /*Titulos*/
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .pie-pagina .grupo-1 ul{ /* texto inf de contacto*/
+            margin-bottom: -10px;
+        }
+    }
