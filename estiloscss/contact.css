@@ -91,6 +91,7 @@ textarea {
     border: none;
     line-height: 45px;
     border-radius: 10px;
+    outline: none; 
 }
 
 .formulario__validacion-estado {
@@ -103,8 +104,7 @@ textarea {
 }
 
 .formulario__input:focus {
-    border-color:#b10909;
-    box-shadow: 0 0 5px #b10909;
+    box-shadow: 0 0 5px rgb(73, 85, 119);
 }
 
 .formulario__input-error {
