@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,155 +8,196 @@
     <title>Contactate con nosotros</title>
     <link rel="stylesheet" href="estiloscss/contact.css">
     <link rel="stylesheet" href="estiloscss/style-footer.css">
-    <script src="js/formulario.js"></script>
     <script src="https://kit.fontawesome.com/9cd7f0d7c6.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="logo.ico">
+    <link rel="icon" href="logo.ico">
 
 </head>
+
 <body>
     <div class="contenedor">
+
         <header>
             <a href="index.html"> <img class="logoheader" src="/img/logoheader.png"></a>
 
-                <nav class="menu">
+            <nav class="menu">
                 <ul class="nav-menu" id="listamenu">
-                  <li><a class="aheader" href="index.html">Inicio</a></li>
-                  <li><a class="aheader" href="nosotros.html">Nosotros</a></li>
-                  <li><a class="aheader" href="cursos.html">Cursos</a></li>
-                  <li><a class="aheader" href="talleres.html">Talleres</a></li>
-                  <li><a class="aheader" href="preguntas.html">Preguntas</a></li>
-                  <li><a class="aheader" href="contacto.html">Contacto</a></li>
+                    <li><a class="aheader" href="index.html">Inicio</a></li>
+                    <li><a class="aheader" href="nosotros.html">Nosotros</a></li>
+                    <li><a class="aheader" href="cursos.html">Cursos</a></li>
+                    <li><a class="aheader" href="talleres.html">Talleres</a></li>
+                    <li><a class="aheader" href="preguntas.html">Preguntas</a></li>
+                    <li><a class="aheader" href="contacto.html">Contacto</a></li>
                 </ul>
-              </nav>
-              
+            </nav>
+
         </header>
-    <form action="" class="formulario" id="formulario">
-        <h2>CONTACTO</h2>
-        <div class="formulario_grupo id="grupo_nombre">
-            <div class="formulario_grupo-input">
-                <input type="text" maxlength="40" class="formulario_input" name="nombre" placeholder="Ingrese su nombre y apellido" id="nombre">
-                <i class="formulario_validacion-estado fas fa-times-circle"></i>
-                <p class="formulario_input-error">Ingrese los datos correctamente</p>
-            </div>
-        </div>
 
-        <div class="formulario_grupo" id="grupo_correo">
-            <div class="formulario_grupo-input">
-                <input type="email" maxlength="30" class="formulario_input" name="correo" placeholder="Ingrese su Email" id="correo">
-                <i class="formulario_validacion-estado fas fa-times-circle"></i>
-                <p class="formulario_input-error"></p>
-            </div>
-            
-        </div>
+        <!-- MAIN contacto-->
+        <main class="contact">
+            <!-- FORMULARIO -->
+            <form action="#" class="formulario" id="formulario">
+                <h2>CONTACTO</h2>
 
-        <div class="formulario_grupo" id="grupo_telefono">
-            <div class="formulario_grupo-input">
-                <input type="tel" class="formulario_input" name="asunto" placeholder="Ingrese su número de teléfono" id="telefono">
-                <i class="formulario_validacion-estado fas fa-times-circle"></i>
-                <p class="formulario_input-error"></p>
-            </div>
-            
-        </div>
-
-        <div class="formulario_grupo" id="grupo_mensaje">
-            <div class="formulario_grupo-input">
-                <Textarea class="formulario_input" name="mensaje" id="mensaje" placeholder="Mensaje..."></Textarea>
-                <i class="formulario_validacion-estado fas fa-times-circle"></i>
-                <p class="formulario_input-error"></p>
-            </div>
-            
-        </div>
-        <div>
-            <p class="formulario_mensaje"><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellene el formulario correctamente</p>
-        </div>
-        
-        <div class="formulario_grupo formulario_grupo-btn-enviar">
-            <button type="submit" class="formulario_btn" value="Enviar">Enviar</button>
-            <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado exitosamente!</p>
-        </div>
-
-        
-    </form>
-
-</div>
-<footer class="pie-pagina">
-    <div class="grupo-1">
-        <div class="column1">
-            <h3>INFORMACIÓN DE CONTACTO</h3>
-            <div class="row">
-                <p>Cualquier consulta no dudes en contactarnos:
-                </p>
-                <ul class="contact-info">
-                    <li>
-                        <img src="img/correo-electronico.png">
-                        <a href="mailto:mail@academia.edu.ar">mail@academia.edu.ar</a>
-                    </li>
-                    <li>
-                        <img src="img/telefono-movil.png">
-                        Mañana, 9 a 14hs: (+54)011-xxxx-xxxx
-                    </li>
-                    <li>
-                        <img src="img/telefono-movil.png" alt="">
-                        Tarde, 14 a 21hs: (+54)011-xxxx-xxxx
-                    </li>
-                    <li>
-                        <img src="img/casa.png" alt="">
-                        Dirección xxx, CABA.
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
-
-        <div class="column2">
-            <h3>LINKS</h3>
-            <div class="row">
-                <ul class="links">
-                    <li>
-                        <a href="#">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#">Cursos</a>
-                    </li>
-                    <li>
-                        <a href="#">Preguntas</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="column3">
-            <div>
-                <h3>NUESTRAS REDES</h3>
-                <div class="red-social">
-                    <a href="https://www.facebook.com/" target="blank">
-                        <img src="img/facebook.png" alt="mis redes sociales"class="redes">
-                       </a>
-                       <a href="https://www.instagram.com/" target="blank">
-                        <img src="img/instagram.png" alt="mis redes sociales"class="redes"> 
-                   </a>
-                       <a href="https://www.linkedin.com/" target="blank">
-                        <img src="img/linkedin.png" alt="mis redes sociales"class="redes">
-                       </a>
+                <!-- GRUPO DE NOMBRE-->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre"
+                            placeholder="Ingrese su nombre y apellido">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres y solo se admiten
+                        números,
+                        letras y guión bajo.</p>
                 </div>
-                
+
+                <!-- GRUPO DE EMAIL -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo"
+                            placeholder="Ingrese su Email">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo debe tener mÍnimo 4 caracteres y sólo se admiten
+                        números,
+                        letras y guión bajo.</p>
+                </div>
+
+
+                <!-- GRUPO DE TELÉFONO -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <div class="formulario__grupo-input">
+                        <input type="telefono" class="formulario__input" name="telefono" id="telefono"
+                            placeholder="Ingrese su número de teléfono">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El número debe tener 10 digitos</p>
+                </div>
+
+                <!-- GRUPO DE ASUNTO-->
+                <div class="formulario__grupo" id="grupo__asunto">
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Asunto">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres y solo se admiten
+                        números,
+                        letras y guión bajo.</p>
+                </div>
+
+                <!-- GRUPO MENSAJE -->
+                <div class="formulario__grupo" id="grupo__mensaje">
+                    <div class="formulario__grupo-input">
+                        <Textarea class="formulario__input" name="mensaje" id="mensaje"
+                            placeholder="Mensaje..."></Textarea>
+                    </div>
+                </div>
+
+                <!-- GRUPO TERMINOS Y CONDICIONES -->
+                <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        <b class="formulario__span">Acepto los terminos y condiciones</b>
+                    </label>
+                </div>
+
+                <!-- MENSAJE DE CAMPOS REQUERIDOS -->
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los campos</i></p>
+                </div>
+
+
+                <!-- GRUPO ENVIAR -->
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió
+                        correctamente
+                    </p>
+                    <input class="formulario__btn" type="submit" value="Enviar">
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="column1">
+                <h3>INFORMACIÓN DE CONTACTO</h3>
+                <div class="row">
+                    <p>Cualquier consulta no dudes en contactarnos:
+                    </p>
+                    <ul class="contact-info">
+                        <li>
+                            <img src="img/correo-electronico.png">
+                            <a href="mailto:mail@academia.edu.ar">mail@academia.edu.ar</a>
+                        </li>
+                        <li>
+                            <img src="img/telefono-movil.png">
+                            Mañana, 9 a 14hs: (+54)011-xxxx-xxxx
+                        </li>
+                        <li>
+                            <img src="img/telefono-movil.png" alt="">
+                            Tarde, 14 a 21hs: (+54)011-xxxx-xxxx
+                        </li>
+                        <li>
+                            <img src="img/casa.png" alt="">
+                            Dirección xxx, CABA.
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-            
+
+            <div class="column2">
+                <h3>LINKS</h3>
+                <div class="row">
+                    <ul class="links">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="cursos.html">Cursos</a>
+                        </li>
+                        <li>
+                            <a href="preguntas.html">Preguntas</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column3">
+                <div>
+                    <h3>NUESTRAS REDES</h3>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/" target="blank">
+                            <img src="img/facebook.png" alt="mis redes sociales" class="redes">
+                        </a>
+                        <a href="https://www.instagram.com/" target="blank">
+                            <img src="img/instagram.png" alt="mis redes sociales" class="redes">
+                        </a>
+                        <a href="https://www.linkedin.com/" target="blank">
+                            <img src="img/linkedin.png" alt="mis redes sociales" class="redes">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
+        <div class="grupo-2">
+            <small>Copyright ©2022 Todos los derechos reservados</small>
+        </div>
+
+    </footer>
     </div>
 
-    <div class="grupo-2">
-        <small>Copyright ©2022 Todos los derechos reservados</small>
-    </div>
-
-</footer>
-</div>
+    <script src="js/formulario.js"></script>
 </body>
+
 </html>

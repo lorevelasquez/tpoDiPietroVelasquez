@@ -161,7 +161,7 @@ nav a{ /*links en negrita*/
 }
 
 .pie-pagina .grupo-1 ul a:hover{
-    color: lightpink;
+    color: #c72828;
 }
 
 .pie-pagina .grupo-1 ul a{
@@ -179,10 +179,10 @@ nav a{ /*links en negrita*/
     text-align: center;
 }
 .pie-pagina .grupo-1 .links a:hover{
-    color: lightpink;
+    color: #c72828;
 }    
 .pie-pagina .grupo-1 .red-social img:hover{
-    color: lightpink;
+    color: #c72828;
 }
 
 .pie-pagina .grupo-1 .links li a{ /*links de la columna LINKS*/
@@ -193,7 +193,7 @@ nav a{ /*links en negrita*/
 }
 
 .pie-pagina .grupo-2{ /*copyright*/
-    background-color: rgb(34, 4, 48);
+    background-color: rgb(0, 0, 51);
     padding: 15px 10px;
     text-align: center;
     color: white;
